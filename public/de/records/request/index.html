@@ -1,0 +1,67 @@
+<!doctype html><html class="no-js" lang="de" dir="ltr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Akte anfordern - Regierung des Separated Kingdom</title><meta name="description" content="Akte anfordern."><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css"><noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css"></noscript><link rel="icon" href="/assets/img/flag.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/css/site.css?v=oss18"></head><body vocab="http://schema.org/" typeof="WebPage"><header><div id="wb-bnr" class="container"><div class="row"><div class="brand col-xs-9 col-sm-8 col-md-6"><a href="/de/"><img class="sk-sig" src="/assets/img/government.svg" alt="Regierung des Separated Kingdom"></a></div><section id="wb-lng" class="col-xs-3 col-sm-4 col-md-6 text-right"><h2 class="wb-inv">Sprachauswahl</h2><ul class="list-inline mrgn-bttm-0"><li><a lang="en" hreflang="en" href="/en/">English</a></li></ul></section></div></div><hr>
+      <div class="container sk-header-menu-wrap"><div class="row"><div class="col-md-8">
+        <nav class="gcweb-menu sk-simple-menu" typeof="SiteNavigationElement">
+          <h2 class="wb-inv">Menü</h2>
+          <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Hauptmenü </span>Menü <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+          <ul class="sk-menu-list">
+            <li><a href="/de/services/">Dienste</a></li>
+            <li><a href="/de/requests/">Anfragezentrum</a></li>
+            <li><a href="/de/request-status/">Anfragestatus</a></li>
+            <li><a href="/de/news/">Nachrichten</a></li>
+            <li><a href="/de/incident-reports/">Ereignisberichte</a></li>
+            <li><a href="/de/advisories/">Hinweise</a></li>
+            <li><a href="/de/alerts/">Notfallmeldungen</a></li>
+            <li><a href="/de/gazette/">Amtsblatt</a></li>
+            <li><a href="/de/laws/">Gesetze</a></li>
+            <li><a href="/de/transparency/">Transparenz</a></li>
+            <li><a href="/de/records/">Akten</a></li>
+            <li><a href="/de/states/">Staaten</a></li>
+            <li><a href="/de/departments/">Behörden</a></li>
+            <li><a href="/de/status/">Dienststatus</a></li>
+            <li><a href="/de/latest/">Aktuelle Änderungen</a></li>
+            <li><a href="/de/campaigns/">Offizielle Kampagnen</a></li>
+            <li><a href="/de/elections/">Wahlinformationen</a></li>
+            <li><a href="/de/vote/">Online-Abstimmung</a></li>
+            <li><a href="/de/elections/results/">Wahlergebnisse</a></li>
+            <li><a href="/de/account/">Mein SK-Konto</a></li>
+          </ul>
+        </nav>
+      </div></div></div>
+</header>
+<main class="container" property="mainContentOfPage">
+  <h1 id="wb-cont">Akte anfordern</h1>
+  <p class="pagetag">Eine öffentliche oder private Akte anfordern, die nicht bereits auf der veröffentlichten Aktenseite sichtbar ist.</p>
+
+  <section class="alert alert-info">
+    <h2 class="h4">Öffentliche oder private Akte?</h2>
+    <p><strong>Öffentliche Akte</strong>: eine Akte, die allgemein freigegeben werden kann, aber derzeit nicht veröffentlicht ist.</p>
+    <p><strong>Private Akte</strong>: eine persönliche, eingeschränkte oder fallbezogene Akte. Geben Sie wenn möglich Aktenzeichen, Fallnummer oder Dateinummer an.</p>
+  </section>
+
+  <div id="request-result" aria-live="polite"></div>
+
+  <form id="service-request-form" class="service-request-form request-clear-form" data-lang="de">
+    <input type="hidden" name="requestType" value="records">
+
+    <fieldset>
+      <legend>Aktenart</legend>
+      <div class="radio"><label><input type="radio" name="recordAccessType" value="public" checked> Öffentliche Akte</label></div>
+      <div class="radio"><label><input type="radio" name="recordAccessType" value="private"> Private / persönliche / fallbezogene Akte</label></div>
+    </fieldset>
+
+    <div class="form-group">
+      <label for="recordTag">Aktenzeichen, Fallnummer oder Dateinummer</label>
+      <input class="form-control" id="recordTag" name="recordTag" placeholder="Beispiel: CASE-1234, Dateinummer, Personen-ID, Sitzungsdatum">
+      <p class="help-block">Dies hilft Mitarbeitenden beim Auffinden der Akte. Schreiben Sie „unknown“, wenn Sie keine Nummer haben.</p>
+    </div>
+
+    <div class="form-group"><label for="fullName">Vollständiger Name</label><input class="form-control" id="fullName" name="fullName" required autocomplete="name"></div>
+    <div class="form-group"><label for="email">E-Mail-Adresse</label><input class="form-control" id="email" name="email" type="email" required autocomplete="email"></div>
+    <div class="form-group"><label for="location">Abteilung, Gebiet oder Aktenquelle</label><input class="form-control" id="location" name="location" placeholder="Rat, Abteilung, Region, Stelle wenn bekannt"></div>
+    <div class="form-group"><label for="details">Angeforderte Akte beschreiben</label><textarea class="form-control" id="details" name="details" rows="6" required placeholder="Akte, Zeitraum, Thema, beteiligte Person/Stelle und gewünschte Freigabe beschreiben."></textarea></div>
+    <div class="form-group"><label for="identityNote">Identitäts- oder Berechtigungshinweis für private Akten</label><textarea class="form-control" id="identityNote" name="identityNote" rows="4" placeholder="Für private Akten: Verbindung zur Akte oder Berechtigung erklären."></textarea></div>
+    <button class="btn btn-primary" type="submit">Aktenanfrage senden</button>
+    <a class="btn btn-default" href="/de/request-status/">Anfragestatus prüfen</a>
+  </form>
+</main>
+<footer id="wb-info"><div class="container"><p><a href="/de/">Regierung des Separated Kingdom</a></p></div></footer><script src="/assets/js/site.js?v=oss18"></script><script src="/assets/js/service-request.js?v=oss18"></script></body></html>

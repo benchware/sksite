@@ -1,0 +1,26 @@
+# Runtime data
+data/
+backup-*/
+backup-content-*/
+backup-dashboard-repair-*/
+*.sqlite
+*.db
+*.bak
+*.backup*
+*.backup
+
+# Secrets and live deployment config
+.env
+Caddyfile
+*.pem
+*.key
+*.crt
+
+# Dependencies/build output
+node_modules/
+dist/
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*

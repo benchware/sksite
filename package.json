@@ -1,0 +1,32 @@
+{
+  "name": "separated-kingdom-gcweb",
+  "version": "2.5.0",
+  "private": false,
+  "description": "Open-source GCWeb/Canada.ca-style portal and lightweight Node.js API.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "check:server": "node --check server/index.js",
+    "check:js": "find public/assets/js -name '*.js' -print0 | xargs -0 -n1 node --check",
+    "repair": "bash scripts/repair-dashboard-content.sh",
+    "counts": "bash scripts/check-public-content-counts.sh",
+    "verify:dashboard": "bash scripts/verify-dashboard-scripts.sh",
+    "verify:auth": "bash scripts/verify-dashboard-auth.sh",
+    "verify:nav": "bash scripts/verify-dashboard-nav.sh",
+    "verify:admin-reset": "bash scripts/verify-admin-reset.sh",
+    "verify:login-clean": "bash scripts/verify-login-clean.sh",
+    "verify:login-style": "bash scripts/verify-login-style.sh",
+    "verify:login-gcweb": "bash scripts/verify-login-gcweb.sh",
+    "verify:requests": "bash scripts/verify-request-workflow.sh",
+    "verify:menu": "bash scripts/verify-public-menu.sh",
+    "verify:home-clean": "bash scripts/verify-homepage-cleanup.sh",
+    "verify:de-home": "bash scripts/verify-de-homepage-cleanup.sh",
+    "verify:topic-grid": "bash scripts/verify-homepage-topic-grid.sh",
+    "verify:clearfix-grid": "bash scripts/verify-homepage-clearfix-grid.sh",
+    "verify:records-registry": "bash scripts/verify-records-registry.sh"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT"
+}

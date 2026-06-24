@@ -1,0 +1,47 @@
+<!doctype html><html class="no-js" lang="en" dir="ltr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dashboard security settings - Government of the Separated Kingdom</title><meta name="description" content="Change password and manage two-factor authentication.">
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
+  <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css"></noscript>
+  <link rel="icon" href="/assets/img/flag.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css?v=oss18">
+</head><body vocab="http://schema.org/" typeof="WebPage">
+<header><div id="wb-bnr" class="container"><div class="row"><div class="brand col-xs-9 col-sm-8 col-md-6"><a href="/dashboard/"><img class="sk-sig" src="/assets/img/government.svg" alt="Government of the Separated Kingdom"></a></div><section id="wb-lng" class="col-xs-3 col-sm-4 col-md-6 text-right"><h2 class="wb-inv">Language selection</h2><ul class="list-inline mrgn-bttm-0"><li><a lang="de" hreflang="de" href="/dashboard/de/change-password/">Deutsch</a></li></ul></section></div></div></header>
+<main class="container">
+  <h1 id="wb-cont">Dashboard security settings</h1>
+  <p class="pagetag">Change your password and optionally enable two-factor authentication.</p>
+  <section class="admin-panel">
+    <h2>Change password</h2>
+    <div id="password-result" aria-live="polite"></div>
+    <form id="change-password-form">
+      <label for="currentPassword">Current password</label>
+      <input id="currentPassword" name="currentPassword" class="form-control" type="password" autocomplete="current-password" required>
+      <label for="newPassword">New password</label>
+      <input id="newPassword" name="newPassword" class="form-control" type="password" autocomplete="new-password" minlength="12" required>
+      <label for="confirmPassword">Confirm new password</label>
+      <input id="confirmPassword" name="confirmPassword" class="form-control" type="password" autocomplete="new-password" minlength="12" required>
+      <button class="btn btn-primary mrgn-tp-md" type="submit">Change password</button>
+    </form>
+  </section>
+  <section class="admin-panel">
+    <h2>Two-factor authentication</h2>
+    <div id="mfa-result" aria-live="polite"></div>
+    <p>Use an authenticator app to add an extra sign-in code.</p>
+    <button id="mfa-setup" type="button" class="btn btn-default">Set up two-factor authentication</button>
+    <div id="mfa-panel" class="hidden mrgn-tp-md">
+      <p><strong>Secret:</strong> <code id="mfa-secret"></code></p>
+      <label for="mfa-otpauth">Authenticator URI</label>
+      <input id="mfa-otpauth" class="form-control" readonly>
+      <label for="mfa-code">6-digit code</label>
+      <input id="mfa-code" class="form-control" inputmode="numeric" autocomplete="one-time-code">
+      <button id="mfa-enable" type="button" class="btn btn-primary mrgn-tp-md">Enable 2FA</button>
+    </div>
+    <form id="mfa-disable-form" class="mrgn-tp-lg">
+      <h3 class="h4">Disable 2FA</h3>
+      <label for="disable-mfa-password">Password</label>
+      <input id="disable-mfa-password" name="password" class="form-control" type="password" autocomplete="current-password">
+      <button class="btn btn-default mrgn-tp-md" type="submit">Disable 2FA</button>
+    </form>
+  </section>
+</main>
+<footer id="wb-info"><div class="container"><p><a href="/dashboard/">Dashboard</a></p></div></footer>
+<script src="/assets/js/site.js?v=oss18"></script><script src="/assets/js/admin-session.js?v=oss18"></script><script src="/assets/js/admin-nav.js?v=oss18"></script><script src="/assets/js/admin-security-settings.js?v=oss18"></script>
+</body></html>

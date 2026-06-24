@@ -1,0 +1,124 @@
+<!doctype html><html class="no-js" lang="de" dir="ltr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wahlsteuerung - Regierung des Separated Kingdom</title><meta name="description" content="Online-Abstimmung und Wahlergebnisse verwalten.">
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
+  <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css"></noscript>
+  <link rel="icon" href="/assets/img/flag.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css?v=oss18">
+</head><body vocab="http://schema.org/" typeof="WebPage"><nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Zum Hauptinhalt springen</a></li>
+        <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Zu „Über diese Website“ springen</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container"><div class="row">
+        <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+          <h2 class="wb-inv">Sprachauswahl</h2>
+          <ul class="list-inline mrgn-bttm-0">
+            <li><a lang="en" hreflang="en" href="/dashboard/elections/"><span class="hidden-xs" translate="no">English</span><abbr title="English" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">de</abbr></a></li>
+          </ul>
+        </section>
+        <div class="brand col-xs-9 col-sm-6 col-md-5" property="publisher" typeof="RegierungOrganization">
+          <a href="/en/" property="url"><img class="sk-sig" src="/assets/img/government.svg" alt="Regierung des Separated Kingdom" property="logo"><span class="wb-inv">Regierung des Separated Kingdom</span></a>
+          <meta property="name" content="Regierung des Separated Kingdom">
+          <meta property="areaServed" typeof="Country" content="Separated Kingdom">
+          <link property="logo" href="/assets/img/flag.svg">
+        </div>
+        <section id="wb-srch" class="col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-12 col-sm-5 col-md-4 sk-search">
+          <h2>Suche</h2>
+          <form action="/en/search/" method="get" name="sk-search-box" role="search">
+            <div class="form-group wb-srch-qry">
+              <label for="wb-srch-q" class="wb-inv">Separated Kingdom durchsuchen</label>
+              <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Separated Kingdom durchsuchen">
+              <datalist id="wb-srch-q-ac"></datalist>
+            </div>
+            <div class="form-group submit">
+              <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Suche</span></button>
+            </div>
+          </form>
+        </section>
+      </div></div>
+      <hr>
+      <div class="container"><div class="row"><div class="col-md-8">
+        <nav class="gcweb-menu sk-simple-menu" typeof="SiteNavigationElement">
+          <h2 class="wb-inv">Menü</h2>
+          <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Hauptmenü </span>Menü <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+          <ul class="sk-menu-list">
+            <li><a href="/en/services/">Dienste</a></li>
+<li><a href="/en/news/">Nachrichten</a></li>
+<li><a href="/en/incident-reports/">Ereignisberichte</a></li>
+<li><a href="/en/advisories/">Hinweise</a></li>
+<li><a href="/en/gazette/">Amtsblatt</a></li>
+<li><a href="/en/laws/">Gesetze</a></li>
+<li><a href="/en/transparency/">Transparenz</a></li>
+<li><a href="/en/records/">Aufzeichnungen</a></li>
+<li><a href="/en/states/">Staaten</a></li>
+<li><a href="/en/departments/">Behörden</a></li>
+          </ul>
+        </nav>
+      </div></div></div>
+    </header><main class="container">
+  <h1 id="wb-cont">Wahlsteuerung</h1>
+  <p class="pagetag">Online-Wahlen, Kandidaten, Abstimmungsstatus und Ergebnisveröffentlichung verwalten.</p>
+  <p id="election-save-result"></p>
+  <section class="admin-panel">
+    <h2>Einstellungen des Abstimmungssystems</h2>
+    <form id="voting-settings-form">
+      <div class="checkbox"><label><input type="checkbox" id="voting-enabled"> Online-Abstimmung aktivieren</label></div>
+      <div class="checkbox"><label><input type="checkbox" id="voting-public-page-enabled" checked> Öffentliche Abstimmungsseite anzeigen</label></div>
+      <div class="checkbox"><label><input type="checkbox" id="voting-results-page-enabled" checked> Ergebnisseite anzeigen</label></div>
+      <label for="voting-inactive">Inaktive Meldung Englisch</label><input id="voting-inactive" class="form-control">
+      <label for="voting-inactive-de">Inaktive Meldung Deutsch</label><input id="voting-inactive-de" class="form-control">
+      <label for="receipt-prefix">Referenzpräfix</label><input id="receipt-prefix" class="form-control" value="VOTE">
+      <button class="btn btn-primary mrgn-tp-md" type="submit">Abstimmungseinstellungen speichern</button>
+    </form>
+  </section>
+  <div class="admin-layout">
+    <section>
+      <h2>Wahlen</h2>
+      <div id="election-items" class="record-list"></div>
+    </section>
+    <aside class="admin-panel">
+      <h2>Wahl bearbeiten</h2>
+      <form id="election-form">
+        <input type="hidden" id="election-id">
+        <label for="electionType">Wahltyp</label><input id="electionType" class="form-control" value="presidential">
+        <label for="status">Status</label>
+        <select id="status" class="form-control">
+          <option value="draft">Entwurf</option>
+          <option value="open">Geöffnet</option>
+          <option value="closed">Geschlossen</option>
+          <option value="certified">Zertifiziert</option>
+        </select>
+        <label for="title">Englischer Titel</label><input id="title" class="form-control">
+        <label for="title_de">Deutscher Titel</label><input id="title_de" class="form-control">
+        <label for="description">Englische Beschreibung</label><textarea id="description" class="form-control" rows="4"></textarea>
+        <label for="description_de">Deutsche Beschreibung</label><textarea id="description_de" class="form-control" rows="4"></textarea>
+        <label for="startDate">Startdatum</label><input id="startDate" type="date" class="form-control">
+        <label for="endDate">Enddatum</label><input id="endDate" type="date" class="form-control">
+        <div class="checkbox"><label><input type="checkbox" id="allowRevote"> Erneute Stimmabgabe erlauben</label></div>
+        <div class="checkbox"><label><input type="checkbox" id="showLiveResults"> Live-Ergebnisse anzeigen</label></div>
+        <div class="checkbox"><label><input type="checkbox" id="publishFinalResults"> Endergebnis veröffentlichen</label></div>
+        <label for="candidatesText">Kandidaten, eine Zeile pro Kandidat</label>
+        <textarea id="candidatesText" class="form-control" rows="8" placeholder="heydan9836&#10;AnNormalFractal&#10;Chara&#10;Dosj"></textarea>
+        <button class="btn btn-primary mrgn-tp-md" type="submit">Wahl speichern</button>
+        <button id="election-new" class="btn btn-default mrgn-tp-md" type="button">Neue Wahl</button>
+      </form>
+    </aside>
+  </div>
+</main><section class="pagedetails container">
+      <h2 class="wb-inv">Page details</h2>
+      <dl id="wb-dtmd"><dt>Änderungsdatum:</dt><dd><time property="dateModified">2026-06-23</time></dd></dl>
+    </section>
+    <footer id="wb-info">
+      <div class="sk-footer-main">
+        <div class="container">
+          <h2>Regierung des Separated Kingdom</h2>
+          <div class="row">
+            <div class="col-md-4"><h3>Kontakt</h3><ul class="list-unstyled"><li><a href="/en/departments/">Behörden and agencies</a></li><li><a href="/en/services/">Dienste</a></li></ul></div>
+            <div class="col-md-4"><h3>Themen</h3><ul class="list-unstyled"><li><a href="/en/advisories/">Öffentliche Sicherheit</a></li><li><a href="/en/gazette/">Amtsblatt</a></li><li><a href="/en/transparency/">Transparenz</a></li></ul></div>
+            <div class="col-md-4"><h3>Regierung</h3><ul class="list-unstyled"><li><a href="/en/states/">Staaten and regions</a></li><li><a href="/en/records/">Institutionelle Aufzeichnungen</a></li><li><a href="/en/news/">Nachrichten</a></li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div class="sk-footer-sub"><div class="container"><ul class="list-inline"><li><a href="/de/services/">Kontakt</a></li><li><a href="/de/terms/">Nutzungsbedingungen</a></li><li><a href="/de/privacy/">Datenschutz</a></li></ul></div></div>
+    </footer>    <script src="/assets/js/site.js?v=oss18"></script><script src="/assets/js/admin-session.js?v=oss18"></script><script src="/assets/js/admin-nav.js?v=oss18"></script><script src="/assets/js/dashboard-elections.js?v=oss18"></script></body></html>

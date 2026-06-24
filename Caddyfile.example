@@ -1,0 +1,70 @@
+:80 {
+    root * {$APP_ROOT:/opt/separated-kingdom-gcweb}/public
+    encode gzip zstd
+
+    @blocked path /.git* /.env* /server/* /scripts/* /package.json /README.md /Caddyfile /Caddyfile.* /*.zip /*.bak /*.backup*
+    respond @blocked 404
+
+    header {
+        X-Content-Type-Options "nosniff"
+        X-Frame-Options "SAMEORIGIN"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+        Content-Security-Policy "default-src 'self'; script-src 'self'; script-src-elem 'self'; style-src 'self' 'unsafe-inline' https://wet-boew.github.io; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+    }
+
+    @adminAuth path /admin-auth /admin-auth/*
+    handle @adminAuth {
+        reverse_proxy 127.0.0.1:8787
+    }
+
+    @dashboardLogin path /dashboard/login /dashboard/login/* /dashboard/de/login /dashboard/de/login/*
+    handle @dashboardLogin {
+        try_files {path} {path}/index.html /404/index.html
+        file_server
+    }
+
+    @api path /api /api/*
+    handle @api {
+        forward_auth 127.0.0.1:8787 {
+            uri /admin-auth/check
+            header_up X-Forwarded-Uri {uri}
+            header_up X-Forwarded-Method {method}
+            copy_headers X-Admin-User X-Admin-Role
+        }
+        reverse_proxy 127.0.0.1:8787
+    }
+
+    @accountApi path /account-api /account-api/*
+    handle @accountApi {
+        reverse_proxy 127.0.0.1:8787
+    }
+
+    @electionApi path /election-api /election-api/*
+    handle @electionApi {
+        reverse_proxy 127.0.0.1:8787
+    }
+
+    @dashboard path /dashboard /dashboard/*
+    handle @dashboard {
+        forward_auth 127.0.0.1:8787 {
+            uri /admin-auth/check
+            header_up X-Forwarded-Uri {uri}
+            header_up X-Forwarded-Method {method}
+            copy_headers X-Admin-User X-Admin-Role
+        }
+        try_files {path} {path}/index.html /404/index.html
+        file_server
+    }
+
+    @jsAssets path /assets/js/*
+    header @jsAssets Cache-Control "no-store, must-revalidate"
+
+    @static path /assets/*
+    header @static Cache-Control "public, max-age=3600"
+
+    handle {
+        try_files {path} {path}/index.html /404/index.html
+        file_server
+    }
+}

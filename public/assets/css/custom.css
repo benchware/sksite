@@ -1,0 +1,168 @@
+
+
+
+/* v23 emergency alert system: custom cards, no GCWeb alert icons */
+
+.sk-emergency-banner {
+  background: #b10e1e;
+  color: #fff;
+  border: 0;
+  border-bottom: 3px solid #6f0711;
+  padding: .65rem 0;
+  margin: 0;
+}
+.sk-emergency-banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.sk-emergency-banner-label {
+  background: #fff;
+  color: #b10e1e;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  padding: .22rem .55rem;
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+.sk-emergency-banner-copy {
+  flex: 1 1 360px;
+}
+.sk-emergency-banner-copy strong {
+  display: block;
+  color: #fff;
+}
+.sk-emergency-banner-copy span {
+  display: block;
+}
+.sk-emergency-banner-action {
+  flex: 0 0 auto;
+}
+.sk-emergency-banner a,
+.sk-emergency-banner a:visited {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.sk-alert-card {
+  border: 1px solid #d6d6d6;
+  border-left: 8px solid #2572b4;
+  background: #fff;
+  padding: 1.25rem 1.4rem;
+  margin: 0 0 1.2rem 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+.sk-alert-card h2,
+.sk-alert-card h3 {
+  margin-top: 0;
+}
+.sk-alert-card .sk-alert-level {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  border-radius: 2px;
+  padding: .2rem .55rem;
+  margin-right: .5rem;
+  background: #2572b4;
+  color: #fff;
+}
+.sk-alert-card .meta {
+  color: #555;
+  margin-bottom: .75rem;
+}
+.sk-alert-advisory {
+  border-left-color: #2572b4;
+}
+.sk-alert-advisory .sk-alert-level {
+  background: #2572b4;
+}
+.sk-alert-watch {
+  border-left-color: #f90;
+}
+.sk-alert-watch .sk-alert-level {
+  background: #f90;
+  color: #111;
+}
+.sk-alert-emergency {
+  border-left-color: #d3080c;
+}
+.sk-alert-emergency .sk-alert-level {
+  background: #d3080c;
+}
+.sk-alert-critical {
+  border-left-color: #5c0000;
+  background: #fff7f7;
+}
+.sk-alert-critical .sk-alert-level {
+  background: #5c0000;
+}
+.sk-alert-resolved {
+  border-left-color: #278400;
+}
+.sk-alert-resolved .sk-alert-level {
+  background: #278400;
+}
+.sk-alert-actions {
+  margin-top: .75rem;
+}
+.sk-alert-actions a {
+  margin-right: 1rem;
+}
+
+/* v24 official campaigns / promoted public notices */
+.sk-campaign-slot {
+  margin: 1.5rem 0;
+}
+.sk-campaign-card {
+  border: 1px solid #d6d6d6;
+  border-left: 6px solid #2572b4;
+  background: #fff;
+  padding: 1rem 1.2rem;
+  margin: 0 0 1rem 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+.sk-campaign-card h2,
+.sk-campaign-card h3 {
+  margin-top: .35rem;
+}
+.sk-campaign-label {
+  display: inline-block;
+  background: #2572b4;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-size: .9em;
+  padding: .18rem .5rem;
+  border-radius: 2px;
+}
+.sk-campaign-election {
+  border-left-color: #4b0082;
+}
+.sk-campaign-election .sk-campaign-label {
+  background: #4b0082;
+}
+
+/* v26 voting / election ballot system */
+.sk-vote-card {
+  border: 1px solid #d6d6d6;
+  border-left: 6px solid #4b0082;
+  background: #fff;
+  padding: 1.2rem 1.4rem;
+  margin: 0 0 1.2rem 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+.sk-vote-card h2,
+.sk-vote-card h3 {
+  margin-top: 0;
+}
+.sk-vote-card fieldset {
+  margin-top: 1rem;
+}
+.sk-vote-card .radio {
+  padding: .35rem 0;
+}

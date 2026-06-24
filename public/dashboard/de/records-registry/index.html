@@ -1,0 +1,164 @@
+<!doctype html><html class="no-js" lang="de" dir="ltr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aktenregister - Dashboard</title><meta name="description" content="Serviceanfragen anzeigen.">
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
+  <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css"></noscript>
+  <link rel="icon" href="/assets/img/flag.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css?v=oss18">
+</head><body vocab="http://schema.org/" typeof="WebPage"><nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Zum Hauptinhalt springen</a></li>
+        <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Zu „Über diese Website“ springen</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container"><div class="row">
+        <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+          <h2 class="wb-inv">Sprachauswahl</h2>
+          <ul class="list-inline mrgn-bttm-0">
+            <li><a lang="en" hreflang="en" href="/dashboard/requests/"><span class="hidden-xs" translate="no">English</span><abbr title="English" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">de</abbr></a></li>
+          </ul>
+        </section>
+        <div class="brand col-xs-9 col-sm-6 col-md-5" property="publisher" typeof="RegierungOrganization">
+          <a href="/en/" property="url"><img class="sk-sig" src="/assets/img/government.svg" alt="Regierung des Separated Kingdom" property="logo"><span class="wb-inv">Regierung des Separated Kingdom</span></a>
+          <meta property="name" content="Regierung des Separated Kingdom">
+          <meta property="areaServed" typeof="Country" content="Separated Kingdom">
+          <link property="logo" href="/assets/img/flag.svg">
+        </div>
+        <section id="wb-srch" class="col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-12 col-sm-5 col-md-4 sk-search">
+          <h2>Suche</h2>
+          <form action="/en/search/" method="get" name="sk-search-box" role="search">
+            <div class="form-group wb-srch-qry">
+              <label for="wb-srch-q" class="wb-inv">Separated Kingdom durchsuchen</label>
+              <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Separated Kingdom durchsuchen">
+              <datalist id="wb-srch-q-ac"></datalist>
+            </div>
+            <div class="form-group submit">
+              <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Suche</span></button>
+            </div>
+          </form>
+        </section>
+      </div></div>
+      <hr>
+      <div class="container"><div class="row"><div class="col-md-8">
+        <nav class="gcweb-menu sk-simple-menu" typeof="SiteNavigationElement">
+          <h2 class="wb-inv">Menü</h2>
+          <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Hauptmenü </span>Menü <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+          <ul class="sk-menu-list">
+            <li><a href="/en/services/">Dienste</a></li>
+<li><a href="/en/news/">Nachrichten</a></li>
+<li><a href="/en/incident-reports/">Ereignisberichte</a></li>
+<li><a href="/en/advisories/">Hinweise</a></li>
+<li><a href="/en/gazette/">Amtsblatt</a></li>
+<li><a href="/en/laws/">Gesetze</a></li>
+<li><a href="/en/transparency/">Transparenz</a></li>
+<li><a href="/en/records/">Aufzeichnungen</a></li>
+<li><a href="/en/states/">Staaten</a></li>
+<li><a href="/en/departments/">Behörden</a></li>
+          </ul>
+        </nav>
+      </div></div></div>
+    </header><main class="container">
+  <h1 id="wb-cont">Aktenregister</h1>
+  <p class="pagetag">Öffentliche, private und eingeschränkte Akten erstellen. Veröffentlichte öffentliche Akten erscheinen auf der öffentlichen Aktenseite. Private und eingeschränkte Akten bleiben verborgen und können mit Aktenzeichen und E-Mail geprüft werden.</p>
+
+  <section class="alert alert-info">
+    <h2 class="h4">Aktenzeichen</h2>
+    <p>Leer lassen, um automatisch ein Aktenzeichen zu erzeugen. Präfixe: <code>PUB</code> für öffentliche Akten, <code>PRV</code> für private Akten und <code>RST</code> für eingeschränkte Akten.</p>
+  </section>
+
+  <p id="registry-status" class="mrgn-tp-md"></p>
+
+  <section class="admin-panel">
+    <h2>Akte erstellen oder bearbeiten</h2>
+    <form id="registry-form">
+      <div class="row">
+        <div class="col-md-4">
+          <label for="caseNumber">Aktenzeichen</label>
+          <input id="caseNumber" class="form-control" placeholder="Automatisch wenn leer">
+        </div>
+        <div class="col-md-4">
+          <label for="accessLevel">Zugriffsstufe</label>
+          <select id="accessLevel" class="form-control">
+            <option value="public">Öffentlich</option>
+            <option value="private">Privat / Fallakte</option>
+            <option value="restricted">Eingeschränkt</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="publishStatus">Veröffentlichungsstatus</label>
+          <select id="publishStatus" class="form-control">
+            <option value="draft">Entwurf</option>
+            <option value="published">Veröffentlicht</option>
+            <option value="archived">Archiviert</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="date">Datum</label>
+      <input id="date" type="date" class="form-control">
+
+      <div class="row">
+        <section class="col-md-6">
+          <h3>English</h3>
+          <label for="title">Title</label><input id="title" class="form-control" required>
+          <label for="status">Status</label><input id="status" class="form-control" placeholder="Active / Released / Restricted">
+          <label for="summary">Summary</label><textarea id="summary" class="form-control" rows="5" required></textarea>
+          <label for="department">Department/source</label><input id="department" class="form-control">
+          <label for="decisionNote">Decision note visible in status lookup</label><textarea id="decisionNote" class="form-control" rows="4"></textarea>
+        </section>
+        <section class="col-md-6">
+          <h3>Deutsch</h3>
+          <label for="title_de">Titel</label><input id="title_de" class="form-control">
+          <label for="status_de">Status</label><input id="status_de" class="form-control">
+          <label for="summary_de">Zusammenfassung</label><textarea id="summary_de" class="form-control" rows="5"></textarea>
+          <label for="department_de">Behörde/Quelle</label><input id="department_de" class="form-control">
+          <label for="decisionNote_de">Entscheidungsnotiz</label><textarea id="decisionNote_de" class="form-control" rows="4"></textarea>
+        </section>
+      </div>
+
+      <fieldset>
+        <legend>Private/eingeschränkte Prüffelder</legend>
+        <label for="requesterName">Anfragende Person</label><input id="requesterName" class="form-control">
+        <label for="requesterEmail">E-Mail für private Statusprüfung</label><input id="requesterEmail" type="email" class="form-control">
+        <label for="recordTag">Aktenmarke / altes Aktenzeichen / Dateinummer</label><input id="recordTag" class="form-control">
+      </fieldset>
+
+      <fieldset>
+        <legend>Optionale öffentliche Links</legend>
+        <label for="url">Öffentliche URL</label><input id="url" class="form-control" placeholder="/en/records/example/">
+        <label for="url_de">Deutsche URL</label><input id="url_de" class="form-control" placeholder="/de/records/example/">
+        <label for="attachmentTitle">Anhangstitel</label><input id="attachmentTitle" class="form-control">
+        <label for="attachmentTitle_de">Anhangstitel Deutsch</label><input id="attachmentTitle_de" class="form-control">
+        <label for="attachmentUrl">Anhangs-URL</label><input id="attachmentUrl" class="form-control">
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Akte speichern</button>
+      <button id="registry-cancel" type="button" class="btn btn-default">Formular leeren</button>
+    </form>
+  </section>
+
+  <section class="admin-panel">
+    <h2>Registerakten</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-condensed">
+        <thead><tr><th>Aktenzeichen</th><th>Zugriff</th><th>Akte</th><th>Anfragende Person</th><th>Status</th><th>Aktion</th></tr></thead>
+        <tbody id="registry-body"></tbody>
+      </table>
+    </div>
+  </section>
+</main><section class="pagedetails container">
+      <h2 class="wb-inv">Page details</h2>
+      <dl id="wb-dtmd"><dt>Änderungsdatum:</dt><dd><time property="dateModified">2026-06-23</time></dd></dl>
+    </section>
+    <footer id="wb-info">
+      <div class="sk-footer-main">
+        <div class="container">
+          <h2>Regierung des Separated Kingdom</h2>
+          <div class="row">
+            <div class="col-md-4"><h3>Kontakt</h3><ul class="list-unstyled"><li><a href="/en/departments/">Behörden and agencies</a></li><li><a href="/en/services/">Dienste</a></li></ul></div>
+            <div class="col-md-4"><h3>Themen</h3><ul class="list-unstyled"><li><a href="/en/advisories/">Öffentliche Sicherheit</a></li><li><a href="/en/gazette/">Amtsblatt</a></li><li><a href="/en/transparency/">Transparenz</a></li></ul></div>
+            <div class="col-md-4"><h3>Regierung</h3><ul class="list-unstyled"><li><a href="/en/states/">Staaten and regions</a></li><li><a href="/en/records/">Institutionelle Aufzeichnungen</a></li><li><a href="/en/news/">Nachrichten</a></li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div class="sk-footer-sub"><div class="container"><ul class="list-inline"><li><a href="/de/services/">Kontakt</a></li><li><a href="/de/terms/">Nutzungsbedingungen</a></li><li><a href="/de/privacy/">Datenschutz</a></li></ul></div></div>
+    </footer>    <script src="/assets/js/site.js?v=oss18"></script><script src="/assets/js/admin-session.js?v=oss18"></script><script src="/assets/js/admin-nav.js?v=oss18"></script><script src="/assets/js/dashboard-records-registry.js?v=oss18"></script></body></html>

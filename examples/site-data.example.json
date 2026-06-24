@@ -1,0 +1,757 @@
+{
+  "lastModified": "2026-06-23",
+  "news": [
+    {
+      "id": "sample-election-services",
+      "title": "Electoral Office publishes voting service information",
+      "title_de": "Wahlbüro veröffentlicht Informationen zu Wahldiensten",
+      "date": "2026-06-20",
+      "source": "Electoral Office",
+      "summary": "The Electoral Office published public information about voting services, candidate listings and election result reporting.",
+      "summary_de": "Das Wahlbüro veröffentlichte Informationen zu Wahldiensten, Kandidatenlisten und der Berichterstattung über Wahlergebnisse.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "sample-records-service",
+      "title": "Records office updates request guidance",
+      "title_de": "Aktenstelle aktualisiert Hinweise zur Antragstellung",
+      "date": "2026-06-12",
+      "source": "Records Office",
+      "summary": "Updated guidance explains how residents can request public records and private records that require authorization.",
+      "summary_de": "Aktualisierte Hinweise erklären, wie Einwohner öffentliche Akten und private Akten mit Berechtigungsprüfung anfordern können.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "sample-service-status",
+      "title": "Service status dashboard enters public preview",
+      "title_de": "Dienststatus-Dashboard startet öffentliche Vorschau",
+      "date": "2026-06-05",
+      "source": "Digital Services",
+      "summary": "A public status dashboard is available for selected online services and operational notices.",
+      "summary_de": "Ein öffentliches Status-Dashboard ist für ausgewählte Onlinedienste und Betriebshinweise verfügbar.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "sample-infrastructure-reporting",
+      "title": "Infrastructure issue reporting form expanded",
+      "title_de": "Formular zur Meldung von Infrastrukturproblemen erweitert",
+      "date": "2026-05-28",
+      "source": "Infrastructure Directorate",
+      "summary": "The reporting form now accepts road, rail, signal and public service issue submissions.",
+      "summary_de": "Das Meldeformular nimmt nun Meldungen zu Straßen, Schienen, Signalen und öffentlichen Diensten entgegen.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "sample-emergency-preparedness",
+      "title": "Public safety office issues preparedness reminder",
+      "title_de": "Amt für öffentliche Sicherheit veröffentlicht Vorsorgehinweis",
+      "date": "2026-05-20",
+      "source": "Public Safety Directorate",
+      "summary": "Residents are encouraged to review emergency alerts, service status notices and official preparedness guidance.",
+      "summary_de": "Einwohner werden gebeten, Notfallmeldungen, Dienststatushinweise und amtliche Vorsorgehinweise zu prüfen.",
+      "publishStatus": "published"
+    }
+  ],
+  "incidentReports": [
+    {
+      "id": "IR-2026-001",
+      "title": "Sector C checkpoint congestion",
+      "date": "2026-06-21",
+      "status": "Resolved",
+      "region": "Central Metroville",
+      "summary": "Temporary congestion was recorded at the Sector C checkpoint between 17:10 and 18:35. Additional processing lanes were opened and queue length returned to normal operating range.",
+      "title_de": "Stau am Kontrollpunkt Sektor C",
+      "summary_de": "Zwischen 17:10 und 18:35 wurde ein vorübergehender Stau am Kontrollpunkt Sektor C verzeichnet. Zusätzliche Abfertigungsspuren wurden geöffnet und die Warteschlange kehrte zum normalen Betriebsniveau zurück.",
+      "status_de": "Erledigt",
+      "publishStatus": "published"
+    },
+    {
+      "id": "IR-2026-002",
+      "title": "Localized communications failure on East Metroville relay",
+      "date": "2026-06-18",
+      "status": "Closed",
+      "region": "East Metroville",
+      "summary": "A short-duration relay fault affected municipal radio routing in East Metroville. Backup routing remained available while the relay was inspected.",
+      "title_de": "Lokale Kommunikationsstörung am Relais East Metroville",
+      "summary_de": "Eine kurzzeitige Relaisstörung beeinträchtigte die kommunale Funkweiterleitung in East Metroville. Ersatzrouten blieben verfügbar, während das Relais geprüft wurde.",
+      "status_de": "Geschlossen",
+      "publishStatus": "published"
+    },
+    {
+      "id": "IR-2026-003",
+      "title": "Regional frequency spike during evening travel period",
+      "date": "2026-06-13",
+      "status": "Monitoring",
+      "region": "Metroville transport corridor",
+      "summary": "Monitoring systems detected elevated traffic on regional communications frequencies during the evening travel period. No service interruption was confirmed.",
+      "title_de": "Regionale Frequenzspitze während der Abendverkehrszeit",
+      "summary_de": "Überwachungssysteme erfassten während der Abendverkehrszeit erhöhte Aktivität auf regionalen Kommunikationsfrequenzen. Eine Dienstunterbrechung wurde nicht bestätigt.",
+      "status_de": "Beobachtung",
+      "publishStatus": "published"
+    }
+  ],
+  "advisories": [
+    {
+      "id": "ADV-2026-006",
+      "title": "Heavy rain and drainage advisory",
+      "date": "2026-06-23",
+      "status": "Active",
+      "region": "Metroville",
+      "summary": "Residents are advised to avoid low-lying underpasses and report blocked drains to municipal services. Infrastructure crews are conducting priority checks along major roads.",
+      "title_de": "Starkregen- und Entwässerungshinweis",
+      "summary_de": "Einwohner sollen tiefliegende Unterführungen meiden und verstopfte Abflüsse an kommunale Dienste melden. Infrastrukturteams prüfen vorrangig Hauptverkehrsstraßen.",
+      "status_de": "Aktiv",
+      "publishStatus": "published"
+    },
+    {
+      "id": "ADV-2026-005",
+      "title": "Metro station platform safety notice",
+      "date": "2026-06-19",
+      "status": "Active",
+      "region": "North Edge Line",
+      "summary": "Passengers should stand behind marked platform lines and follow station staff instructions during peak operating hours.",
+      "title_de": "Sicherheitshinweis für Metro-Bahnsteige",
+      "summary_de": "Fahrgäste sollen hinter den markierten Bahnsteiglinien bleiben und den Anweisungen des Stationspersonals während der Hauptverkehrszeiten folgen.",
+      "status_de": "Aktiv",
+      "publishStatus": "published"
+    },
+    {
+      "id": "ADV-2026-004",
+      "title": "Public forum moderation maintenance window",
+      "date": "2026-06-12",
+      "status": "Expired",
+      "region": "Online services",
+      "summary": "Community forum moderation audit tools underwent scheduled maintenance. Normal service has resumed.",
+      "title_de": "Wartungsfenster für Moderationsprüfungen im öffentlichen Forum",
+      "summary_de": "Die Prüfwerkzeuge für die Moderation öffentlicher Foren wurden planmäßig gewartet. Der normale Dienst wurde wieder aufgenommen.",
+      "status_de": "Abgelaufen",
+      "publishStatus": "published"
+    }
+  ],
+  "gazette": [
+    {
+      "id": "GZ-2026-014",
+      "title": "Metroville Infrastructure Development reporting order",
+      "date": "2026-06-20",
+      "category": "Ministerial notice",
+      "summary": "The administration published a reporting order requiring quarterly infrastructure progress summaries for major road, rail and communications projects in Metroville.",
+      "title_de": "Berichtsanordnung für Metroville Infrastructure Development",
+      "summary_de": "Die Verwaltung veröffentlichte eine Berichtsanordnung, die vierteljährliche Fortschrittsberichte zu großen Straßen-, Schienen- und Kommunikationsprojekten in Metroville verlangt.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "GZ-2026-011",
+      "title": "Public Community Forum compliance notice",
+      "date": "2026-06-10",
+      "category": "Administrative notice",
+      "summary": "The Gazette records updated moderation audit categories for warnings, text filtration flags and public-service forum compliance monitoring.",
+      "title_de": "Compliance-Mitteilung für öffentliche Community-Foren",
+      "summary_de": "Das Amtsblatt verzeichnet aktualisierte Prüfungskategorien für Warnungen, Textfiltermarkierungen und die Überwachung öffentlicher Service-Foren.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "GZ-2025-037",
+      "title": "Æ Headquarters construction declaration",
+      "date": "2025-08-06",
+      "category": "Development declaration",
+      "summary": "Construction approval was recorded for the Æ Headquarters project following required municipal review.",
+      "title_de": "Bauentscheidung für das Æ-Hauptquartier",
+      "summary_de": "Die Baugenehmigung für das Projekt Æ Headquarters wurde nach der erforderlichen kommunalen Prüfung eingetragen.",
+      "publishStatus": "published"
+    }
+  ],
+  "services": [
+    {
+      "id": "nipi-passport",
+      "title": "Apply for a NIPI passport",
+      "summary": "Apply for a National Inter‑Polity Identification passport for travel to other countries and external jurisdictions.",
+      "url": "https://nipi-passport.kmaixdev.workers.dev/",
+      "external": true,
+      "title_de": "NIPI-Reisepass beantragen",
+      "summary_de": "Beantragen Sie einen National Inter‑Polity Identification-Pass für Reisen in andere Länder und externe Zuständigkeitsbereiche.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "transit-access-permit",
+      "title": "Apply for a transit access permit",
+      "summary": "Access rules, permit classes and status checks for Metroville public transit and controlled station areas.",
+      "url": "/en/services/transit-access-permit/",
+      "title_de": "Transit-Zugangsgenehmigung beantragen",
+      "summary_de": "Zugangsregeln, Genehmigungsklassen und Statusprüfungen für den öffentlichen Verkehr in Metroville und kontrollierte Stationsbereiche.",
+      "url_de": "/de/services/transit-access-permit/",
+      "publishStatus": "published"
+    },
+    {
+      "id": "report-infrastructure-issue",
+      "title": "Report a road, rail or signal issue",
+      "summary": "Submit reports to Metroville Infrastructure Development for municipal roads, line equipment and related public infrastructure.",
+      "url": "/en/services/report-infrastructure-issue/",
+      "title_de": "Straßen-, Schienen- oder Signalproblem melden",
+      "summary_de": "Melden Sie kommunale Straßen, Linienausrüstung und verwandte öffentliche Infrastruktur an Metroville Infrastructure Development.",
+      "url_de": "/de/services/report-infrastructure-issue/",
+      "publishStatus": "published"
+    },
+    {
+      "id": "record-request",
+      "title": "Request a record",
+      "summary": "Request a published public record or a private/personal record requiring authorization and identity verification.",
+      "url": "/en/records/request/",
+      "title_de": "Akte anfordern",
+      "summary_de": "Beantragen Sie eine veröffentlichte öffentliche Akte oder eine private/persönliche Akte, die Berechtigung und Identitätsprüfung erfordert.",
+      "url_de": "/de/records/request/",
+      "publishStatus": "published",
+      "status": "Online",
+      "status_de": "Online",
+      "date": "2026-06-23"
+    },
+    {
+      "id": "active-safety-notices",
+      "title": "Check active safety notices",
+      "summary": "View advisories, alert tiers and service notices issued by the administration.",
+      "url": "/en/advisories/",
+      "title_de": "Aktive Sicherheitshinweise prüfen",
+      "summary_de": "Hinweise, Warnstufen und Dienstmeldungen der Verwaltung anzeigen.",
+      "url_de": "/de/advisories/",
+      "publishStatus": "published"
+    },
+    {
+      "id": "gazette-notices",
+      "title": "View Gazette notices",
+      "summary": "Legal declarations, code updates and official notices published by the administration.",
+      "url": "/en/gazette/",
+      "title_de": "Amtsblattmitteilungen anzeigen",
+      "summary_de": "Rechtliche Erklärungen, Code-Aktualisierungen und amtliche Mitteilungen der Verwaltung.",
+      "url_de": "/de/gazette/",
+      "publishStatus": "published"
+    },
+    {
+      "id": "transparency-logs",
+      "title": "Review transparency logs",
+      "summary": "Processed information requests, applicant profiles and response indexes.",
+      "url": "/en/transparency/",
+      "title_de": "Transparenzprotokolle prüfen",
+      "summary_de": "Bearbeitete Informationsanfragen, Antragstellerprofile und Antwortindizes.",
+      "url_de": "/de/transparency/",
+      "publishStatus": "published"
+    }
+  ],
+  "transparency": [
+    {
+      "id": "FOI-2026-021",
+      "title": "Request index: station platform incident summaries",
+      "date": "2026-06-15",
+      "status": "Processed",
+      "summary": "A request for station platform incident summaries was processed with personal identifiers removed.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "FOI-2026-018",
+      "title": "Request index: road improvement expenditures",
+      "date": "2026-06-07",
+      "status": "Processed",
+      "summary": "A request for road improvement expenditure summaries was processed with procurement details redacted where required.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "FOI-2026-012",
+      "title": "Request index: community forum moderation categories",
+      "date": "2026-05-26",
+      "status": "Partially released",
+      "summary": "A summary of moderation categories and text filtration flags was released with internal risk thresholds redacted.",
+      "publishStatus": "published"
+    }
+  ],
+  "records": [
+    {
+      "id": "REC-2026-031",
+      "title": "Council meeting minutes – 15 March 2026",
+      "date": "2026-03-15",
+      "type": "Meeting minutes",
+      "summary": "Minutes from the regular session of the Separated Kingdom Council, including budget allocations, infrastructure updates and public safety reporting.",
+      "title_de": "Ratsprotokoll – 15. März 2026",
+      "summary_de": "Protokoll der regulären Sitzung des Rates des Separated Kingdom, einschließlich Haushaltszuweisungen, Infrastrukturaktualisierungen und Berichten zur öffentlichen Sicherheit.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "REC-2026-024",
+      "title": "Regional status overview – first quarter 2026",
+      "date": "2026-04-02",
+      "type": "Status overview",
+      "summary": "Quarterly overview of state-level operations, development status and administrative priorities.",
+      "title_de": "Regionale Statusübersicht – erstes Quartal 2026",
+      "summary_de": "Vierteljährliche Übersicht über staatliche Abläufe, Entwicklungsstatus und Verwaltungsschwerpunkte.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "REC-2025-088",
+      "title": "Public accounting ledger audit summary",
+      "date": "2025-12-18",
+      "type": "Audit summary",
+      "summary": "A summary audit of selected public accounts and capital project ledgers.",
+      "title_de": "Zusammenfassung der Prüfung öffentlicher Konten",
+      "summary_de": "Zusammenfassung der Prüfung ausgewählter öffentlicher Konten und Kapitalprojektbücher.",
+      "publishStatus": "published"
+    }
+  ],
+  "states": [
+    {
+      "name": "Metroville",
+      "status": "Developed; modern conversion ongoing",
+      "summary": "Administrative and economic centre with the most mature public infrastructure network.",
+      "status_de": "Entwickelt; Modernisierung läuft",
+      "summary_de": "Administratives und wirtschaftliches Zentrum mit dem am weitesten entwickelten öffentlichen Infrastrukturnetz.",
+      "publishStatus": "published"
+    },
+    {
+      "name": "Mitsil",
+      "status": "Under development",
+      "summary": "Planned state with initial administrative and land-use development underway.",
+      "status_de": "In Entwicklung",
+      "summary_de": "Geplanter Staat mit laufender administrativer und baulicher Entwicklung.",
+      "publishStatus": "published"
+    },
+    {
+      "name": "Quincyville",
+      "status": "Under development",
+      "summary": "Developing state with infrastructure planning and service expansion in progress.",
+      "status_de": "In Entwicklung",
+      "summary_de": "Geplanter Staat mit laufender administrativer und baulicher Entwicklung.",
+      "publishStatus": "published"
+    },
+    {
+      "name": "Broville",
+      "status": "Under development",
+      "summary": "Planned state with future residential, civic and infrastructure development.",
+      "status_de": "In Entwicklung",
+      "summary_de": "Geplanter Staat mit laufender administrativer und baulicher Entwicklung.",
+      "publishStatus": "published"
+    }
+  ],
+  "departments": [
+    {
+      "id": "mvpd",
+      "name": "Metroville Police Department",
+      "abbr": "MVPD",
+      "type": "Public safety",
+      "summary": "Responsible for policing, investigation coordination and public safety operations in Metroville.",
+      "name_de": "Metroville Police Department",
+      "type_de": "Öffentliche Sicherheit",
+      "summary_de": "Zuständig für Polizeiarbeit, Ermittlungskoordination und öffentliche Sicherheit in Metroville.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "mvfd",
+      "name": "Metroville Fire Department",
+      "abbr": "MVFD",
+      "type": "Emergency services",
+      "summary": "Provides fire response, rescue coordination and emergency support services.",
+      "name_de": "Metroville Fire Department",
+      "type_de": "Rettungs- und Feuerwehrdienste",
+      "summary_de": "Leistet Brandbekämpfung, Rettungskoordination und Unterstützung bei Notfällen.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "mid",
+      "name": "Metroville Infrastructure Development",
+      "abbr": "MID",
+      "type": "Infrastructure",
+      "summary": "A Metroville-government funded department aiming to develop Metroville's infrastructure. MID has made improvements to roads in Metroville as well as pioneering the first metro line for the city. MID is the parent organization of MID Metro as well as PT Telcumsel.",
+      "name_de": "Metroville Infrastructure Development",
+      "type_de": "Von der Regierung Metroville finanzierte Behörde",
+      "summary_de": "Eine von der Metroville-Regierung finanzierte Behörde zur Entwicklung der Infrastruktur Metroville. MID verbessert Straßen und hat die erste Metro-Linie der Stadt vorangetrieben. MID ist die Mutterorganisation von MID Metro und PT Telcumsel.",
+      "publishStatus": "published"
+    },
+    {
+      "id": "education",
+      "name": "Metroville Education",
+      "abbr": "Education",
+      "type": "Education",
+      "summary": "Coordinates public education, school administration and education service planning.",
+      "publishStatus": "published"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "xenit",
+      "name": "Xenit",
+      "type": "Technology and infrastructure corporation",
+      "summary": "Security, networking and municipal infrastructure technology provider involved in connectivity, surveillance hardware and institutional technology systems.",
+      "areas": [
+        "xOS Urban municipal systems",
+        "XCS cellular and network equipment",
+        "Security cameras and tactical recording hardware",
+        "Xenit Laboratories research and development",
+        "Xenit Education institutional technology"
+      ],
+      "name_de": "Xenit",
+      "type_de": "Technologie- und Infrastrukturunternehmen",
+      "summary_de": "Anbieter für Sicherheits-, Netzwerk- und kommunale Infrastrukturtechnik mit Systemen für Konnektivität, Überwachungstechnik und institutionelle Technik.",
+      "areas_de": [
+        "xOS Urban für kommunale Systeme",
+        "XCS-Mobilfunk- und Netzwerkausrüstung",
+        "Sicherheitskameras und taktische Aufzeichnungstechnik",
+        "Xenit Laboratories Forschung und Entwicklung",
+        "Xenit Education für institutionelle Technik"
+      ],
+      "publishStatus": "published"
+    },
+    {
+      "id": "breeze-tech",
+      "name": "Breeze Tech",
+      "type": "Consumer electronics corporation",
+      "summary": "Consumer electronics and digital lifestyle company producing devices and home systems used by residents and institutions.",
+      "areas": [
+        "Mobile phones and tablets",
+        "Displays and home systems",
+        "Consumer devices connected to municipal networks",
+        "Retail electronics presence in Metroville"
+      ],
+      "name_de": "Breeze Tech",
+      "type_de": "Unternehmen für Unterhaltungselektronik",
+      "summary_de": "Unternehmen für Unterhaltungselektronik und digitale Alltagssysteme, das Geräte und Heimtechnik für Einwohner und Einrichtungen bereitstellt.",
+      "areas_de": [
+        "Mobiltelefone und Tablets",
+        "Displays und Heimtechnik",
+        "Verbrauchergeräte mit Verbindung zu kommunalen Netzen",
+        "Einzelhandelspräsenz in Metroville"
+      ],
+      "publishStatus": "published"
+    },
+    {
+      "id": "mid",
+      "name": "Metroville Infrastructure Development",
+      "type": "Government-funded department",
+      "summary": "Develops public infrastructure for Metroville, including road improvements, metro-line work and public communications projects. Parent organization of MID Metro and PT Telcumsel.",
+      "areas": [
+        "Road improvements",
+        "MID Metro",
+        "PT Telcumsel",
+        "Infrastructure planning and reporting"
+      ],
+      "name_de": "Metroville Infrastructure Development",
+      "type_de": "Regierungsfinanzierte Behörde",
+      "summary_de": "Entwickelt öffentliche Infrastruktur für Metroville, einschließlich Straßenverbesserungen, Metro-Linienarbeiten und öffentlicher Kommunikationsprojekte. Mutterorganisation von MID Metro und PT Telcumsel.",
+      "areas_de": [
+        "Straßenverbesserungen",
+        "MID Metro",
+        "PT Telcumsel",
+        "Infrastrukturplanung und Berichterstattung"
+      ],
+      "publishStatus": "published"
+    }
+  ],
+  "legalDocuments": [
+    {
+      "id": "basic-laws",
+      "title": "The Basic Laws of the Separated Kingdom",
+      "date": "2026-06-23",
+      "status": "In force pending ratification",
+      "summary": "Provisional Code of the Federation enacted by the Supreme Court as the supreme law of the land pending ratification of a permanent Constitution.",
+      "url": "/en/laws/basic-laws/",
+      "title_de": "Grundgesetze des Separated Kingdom",
+      "summary_de": "Vorläufiger Kodex der Föderation, erlassen durch den Supreme Court als oberstes Recht bis zur Ratifizierung einer dauerhaften Verfassung.",
+      "status_de": "In Kraft bis zur Ratifizierung",
+      "url_de": "/de/laws/basic-laws/",
+      "publishStatus": "published"
+    }
+  ],
+  "statusDashboard": [
+    {
+      "id": "transit",
+      "title": "Transit systems",
+      "title_de": "Transitsysteme",
+      "status": "Normal",
+      "status_de": "Normal",
+      "summary": "Transit services are operating normally.",
+      "summary_de": "Die Transitdienste laufen normal.",
+      "severity": "normal",
+      "publishStatus": "published",
+      "date": "2026-06-23"
+    },
+    {
+      "id": "accounts",
+      "title": "Account service",
+      "title_de": "Kontodienst",
+      "status": "Online",
+      "status_de": "Online",
+      "summary": "Public sign-in is available. Public account creation is handled through hotline registration.",
+      "summary_de": "Die öffentliche Anmeldung ist verfügbar. Öffentliche Konten werden über die Hotline registriert.",
+      "severity": "normal",
+      "publishStatus": "published",
+      "date": "2026-06-23"
+    },
+    {
+      "id": "permits",
+      "title": "Permit request service",
+      "title_de": "Genehmigungsdienst",
+      "status": "Online",
+      "status_de": "Online",
+      "summary": "Transit access permit requests are being accepted.",
+      "summary_de": "Anträge auf Transit-Zugangsgenehmigungen werden angenommen.",
+      "severity": "normal",
+      "publishStatus": "published",
+      "date": "2026-06-23"
+    },
+    {
+      "id": "infrastructure",
+      "title": "Infrastructure reporting",
+      "title_de": "Infrastrukturmeldungen",
+      "status": "Online",
+      "status_de": "Online",
+      "summary": "Road, rail and signal reports are being accepted.",
+      "summary_de": "Straßen-, Schienen- und Signalmeldungen werden angenommen.",
+      "severity": "normal",
+      "publishStatus": "published",
+      "date": "2026-06-23"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert-earthquake-readiness",
+      "hazardType": "earthquake",
+      "severity": "watch",
+      "status": "draft",
+      "title": "Earthquake readiness watch",
+      "title_de": "Erdbeben-Bereitschaftswarnung",
+      "affectedArea": "Metroville and surrounding transit corridors",
+      "affectedArea_de": "Metroville und umliegende Transitkorridore",
+      "startTime": "2026-06-23T00:00:00",
+      "endTime": "",
+      "date": "2026-06-23",
+      "message": "Ground movement has been reported in the central region. Public services are monitoring infrastructure and transit corridors.",
+      "message_de": "Bodenbewegungen wurden in der Zentralregion gemeldet. Öffentliche Dienste überwachen Infrastruktur und Transitkorridore.",
+      "instructions": "Stay away from damaged structures, keep emergency supplies nearby and follow official updates.",
+      "instructions_de": "Halten Sie Abstand zu beschädigten Gebäuden, halten Sie Notvorräte bereit und verfolgen Sie offizielle Aktualisierungen.",
+      "linkTitle": "View preparedness guidance",
+      "linkTitle_de": "Hinweise zur Vorbereitung anzeigen",
+      "linkUrl": "/en/alerts/",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "alert-tsunami-advisory",
+      "hazardType": "tsunami",
+      "severity": "advisory",
+      "status": "draft",
+      "title": "Coastal surge advisory",
+      "title_de": "Küstenflut-Hinweis",
+      "affectedArea": "Coastal and low-lying districts",
+      "affectedArea_de": "Küsten- und Tieflandbezirke",
+      "startTime": "",
+      "endTime": "",
+      "date": "2026-06-23",
+      "message": "This draft alert can be activated if abnormal sea movement is detected.",
+      "message_de": "Diese Entwurfswarnung kann aktiviert werden, wenn ungewöhnliche Meeresbewegungen erkannt werden.",
+      "instructions": "Prepare to move to higher ground if instructed.",
+      "instructions_de": "Bereiten Sie sich darauf vor, bei Anweisung höher gelegenes Gelände aufzusuchen.",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "alert-tornado-watch",
+      "hazardType": "tornado",
+      "severity": "watch",
+      "status": "draft",
+      "title": "Rotating storm watch",
+      "title_de": "Rotationssturm-Warnbereitschaft",
+      "affectedArea": "Open plains and outer settlements",
+      "affectedArea_de": "Offene Ebenen und äußere Siedlungen",
+      "startTime": "",
+      "endTime": "",
+      "date": "2026-06-23",
+      "message": "Conditions may support severe rotating storms.",
+      "message_de": "Die Bedingungen können schwere rotierende Stürme begünstigen.",
+      "instructions": "Identify sturdy shelter and avoid open areas if warnings are issued.",
+      "instructions_de": "Suchen Sie einen stabilen Schutzraum und meiden Sie offene Flächen, falls Warnungen ausgegeben werden.",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "alert-meteor-watch",
+      "hazardType": "meteor",
+      "severity": "watch",
+      "status": "draft",
+      "title": "Meteor strike watch",
+      "title_de": "Meteoriteneinschlag-Warnbereitschaft",
+      "affectedArea": "Northern observation grid",
+      "affectedArea_de": "Nördliches Beobachtungsraster",
+      "startTime": "",
+      "endTime": "",
+      "date": "2026-06-23",
+      "message": "Skywatch monitoring has identified elevated risk of falling debris.",
+      "message_de": "Die Himmelsüberwachung hat ein erhöhtes Risiko für herabfallende Trümmer festgestellt.",
+      "instructions": "Remain indoors if impact warnings are issued.",
+      "instructions_de": "Bleiben Sie in Innenräumen, wenn Einschlagswarnungen ausgegeben werden.",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "alert-drought-advisory",
+      "hazardType": "drought",
+      "severity": "advisory",
+      "status": "draft",
+      "title": "Drought advisory",
+      "title_de": "Dürre-Hinweis",
+      "affectedArea": "Agricultural districts and reservoir zones",
+      "affectedArea_de": "Landwirtschaftsbezirke und Speicherzonen",
+      "startTime": "",
+      "endTime": "",
+      "date": "2026-06-23",
+      "message": "Extended dry conditions may affect public water reserves.",
+      "message_de": "Anhaltende Trockenheit kann öffentliche Wasserreserven beeinträchtigen.",
+      "instructions": "Conserve water and follow local restrictions when issued.",
+      "instructions_de": "Sparen Sie Wasser und befolgen Sie lokale Beschränkungen, sobald sie erlassen werden.",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "alert-gravitational-anomaly",
+      "hazardType": "gravitational anomaly",
+      "severity": "critical",
+      "status": "draft",
+      "title": "Gravitational anomaly critical alert",
+      "title_de": "Kritische Warnung vor Gravitationsanomalie",
+      "affectedArea": "Restricted observation zone",
+      "affectedArea_de": "Eingeschränkte Beobachtungszone",
+      "startTime": "",
+      "endTime": "",
+      "date": "2026-06-23",
+      "message": "A severe gravitational anomaly may affect movement, structures and navigation.",
+      "message_de": "Eine schwere Gravitationsanomalie kann Bewegung, Bauwerke und Navigation beeinträchtigen.",
+      "instructions": "Evacuate the affected zone immediately if activated. Do not approach the anomaly.",
+      "instructions_de": "Verlassen Sie die betroffene Zone sofort, falls die Warnung aktiviert wird. Nähern Sie sich der Anomalie nicht.",
+      "publishStatus": "draft"
+    }
+  ],
+  "alertSettings": {
+    "enabled": false,
+    "bannerEnabled": true,
+    "publicListEnabled": true,
+    "message": "Emergency Alert System is currently not active.",
+    "message_de": "Das Notfallmeldesystem ist derzeit nicht aktiv."
+  },
+  "campaignSettings": {
+    "enabled": false,
+    "homepageEnabled": true,
+    "publicListEnabled": true,
+    "label": "Promoted public notice",
+    "label_de": "Hervorgehobene öffentliche Mitteilung",
+    "inactiveMessage": "Official campaigns are currently not active.",
+    "inactiveMessage_de": "Offizielle Kampagnen sind derzeit nicht aktiv."
+  },
+  "campaigns": [
+    {
+      "id": "election-information-template",
+      "campaignType": "election",
+      "status": "draft",
+      "priority": 80,
+      "sponsor": "Electoral Office of the Separated Kingdom",
+      "sponsor_de": "Wahlbüro des Separated Kingdom",
+      "disclosure": "Official election information",
+      "disclosure_de": "Amtliche Wahlinformation",
+      "placement": "homepage",
+      "title": "Election information campaign",
+      "title_de": "Wahlinformationskampagne",
+      "summary": "Information about election dates, eligibility, polling locations and how to request accessible voting assistance.",
+      "summary_de": "Informationen zu Wahlterminen, Wahlberechtigung, Wahllokalen und zur Beantragung barrierefreier Wahlunterstützung.",
+      "linkTitle": "View election information",
+      "linkTitle_de": "Wahlinformationen anzeigen",
+      "linkUrl": "/en/campaigns/",
+      "startDate": "",
+      "endDate": "",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "voter-registration-template",
+      "campaignType": "election",
+      "status": "draft",
+      "priority": 70,
+      "sponsor": "Electoral Office of the Separated Kingdom",
+      "sponsor_de": "Wahlbüro des Separated Kingdom",
+      "disclosure": "Official election information",
+      "disclosure_de": "Amtliche Wahlinformation",
+      "placement": "services",
+      "title": "Voter registration notice",
+      "title_de": "Hinweis zur Wählerregistrierung",
+      "summary": "Check registration requirements and update your public account information before the election deadline.",
+      "summary_de": "Prüfen Sie die Registrierungsanforderungen und aktualisieren Sie Ihre Kontoinformationen vor Ablauf der Wahlfrist.",
+      "linkTitle": "Check registration information",
+      "linkTitle_de": "Registrierungsinformationen prüfen",
+      "linkUrl": "/en/campaigns/",
+      "startDate": "",
+      "endDate": "",
+      "publishStatus": "draft"
+    },
+    {
+      "id": "public-safety-preparedness-template",
+      "campaignType": "public-service",
+      "status": "draft",
+      "priority": 50,
+      "sponsor": "Public Safety Directorate",
+      "sponsor_de": "Direktion für öffentliche Sicherheit",
+      "disclosure": "Public service campaign",
+      "disclosure_de": "Kampagne des öffentlichen Dienstes",
+      "placement": "status",
+      "title": "Emergency preparedness campaign",
+      "title_de": "Kampagne zur Notfallvorsorge",
+      "summary": "Prepare supplies, review emergency alerts and keep official contact information available.",
+      "summary_de": "Bereiten Sie Vorräte vor, prüfen Sie Notfallmeldungen und halten Sie amtliche Kontaktinformationen bereit.",
+      "linkTitle": "View emergency alerts",
+      "linkTitle_de": "Notfallmeldungen anzeigen",
+      "linkUrl": "/en/alerts/",
+      "startDate": "",
+      "endDate": "",
+      "publishStatus": "draft"
+    }
+  ],
+  "votingSettings": {
+    "enabled": false,
+    "publicVotingPageEnabled": true,
+    "resultsPageEnabled": true,
+    "inactiveMessage": "Online voting is currently not active.",
+    "inactiveMessage_de": "Die Online-Abstimmung ist derzeit nicht aktiv.",
+    "receiptPrefix": "VOTE"
+  },
+  "elections": [
+    {
+      "id": "presidential-election-2026",
+      "electionType": "presidential",
+      "status": "draft",
+      "title": "Presidential election",
+      "title_de": "Präsidentschaftswahl",
+      "description": "Official presidential election ballot for eligible public accounts.",
+      "description_de": "Amtlicher Stimmzettel zur Präsidentschaftswahl für berechtigte öffentliche Konten.",
+      "startDate": "2026-06-23",
+      "endDate": "2026-07-23",
+      "allowRevote": false,
+      "showLiveResults": false,
+      "publishFinalResults": false,
+      "publishStatus": "draft",
+      "candidates": [
+        {
+          "id": "heydan9836",
+          "name": "heydan9836",
+          "name_de": "heydan9836",
+          "summary": "Registered presidential candidate.",
+          "summary_de": "Registrierter Präsidentschaftskandidat."
+        },
+        {
+          "id": "annormalfractal",
+          "name": "AnNormalFractal",
+          "name_de": "AnNormalFractal",
+          "summary": "Registered presidential candidate.",
+          "summary_de": "Registrierter Präsidentschaftskandidat."
+        },
+        {
+          "id": "chara",
+          "name": "Chara",
+          "name_de": "Chara",
+          "summary": "Registered presidential candidate.",
+          "summary_de": "Registrierter Präsidentschaftskandidat."
+        },
+        {
+          "id": "dosj",
+          "name": "Dosj",
+          "name_de": "Dosj",
+          "summary": "Registered presidential candidate.",
+          "summary_de": "Registrierter Präsidentschaftskandidat."
+        }
+      ]
+    }
+  ]
+}

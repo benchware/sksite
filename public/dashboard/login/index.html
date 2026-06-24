@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard sign in - Government of the Separated Kingdom</title>
+  <meta name="description" content="Sign in to the dashboard.">
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
+  <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css"></noscript>
+  <link rel="icon" href="/assets/img/flag.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css?v=oss18">
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<header>
+  <div id="wb-bnr" class="container">
+    <div class="row">
+      <div class="brand col-xs-9 col-sm-8 col-md-6">
+        <a href="/en/"><img class="sk-sig" src="/assets/img/government.svg" alt="Government of the Separated Kingdom"></a>
+      </div>
+      <section id="wb-lng" class="col-xs-3 col-sm-4 col-md-6 text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline mrgn-bttm-0"><li><a lang="de" hreflang="de" href="/dashboard/de/login/">Deutsch</a></li></ul>
+      </section>
+    </div>
+  </div>
+</header>
+
+<main class="container" property="mainContentOfPage">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 id="wb-cont">Dashboard sign in</h1>
+      <p class="pagetag">Access the administration dashboard for official content, requests, alerts, campaigns, elections and account management.</p>
+
+      <section class="well sk-gcweb-login-panel">
+        <h2 class="h3 mrgn-tp-0">Sign in with a dashboard account</h2>
+        <p>Use an admin, editor or viewer account created in the dashboard accounts database.</p>
+
+        <div id="admin-login-result" aria-live="polite"></div>
+
+        <form id="admin-login-form">
+          <div class="form-group">
+            <label class="required" for="username"><span class="field-name">Username</span> <strong class="required">(required)</strong></label>
+            <input id="username" name="username" class="form-control" autocomplete="username" required autofocus>
+          </div>
+
+          <div class="form-group">
+            <label class="required" for="password"><span class="field-name">Password</span> <strong class="required">(required)</strong></label>
+            <input id="password" name="password" class="form-control" type="password" autocomplete="current-password" required>
+          </div>
+
+          <div id="mfa-wrap" class="hidden form-group">
+            <label for="mfaCode">Two-factor code</label>
+            <input id="mfaCode" name="mfaCode" class="form-control" inputmode="numeric" autocomplete="one-time-code" placeholder="000000">
+          </div>
+
+          <button class="btn btn-primary" type="submit">Sign in</button>
+        </form>
+      </section>
+    </div>
+
+    <aside class="col-md-4">
+      <section class="panel panel-default mrgn-tp-lg">
+        <header class="panel-heading">
+          <h2 class="panel-title">Security notice</h2>
+        </header>
+        <div class="panel-body">
+          <p>This dashboard is for authorized users only.</p>
+          <ul>
+            <li>Sessions are protected by secure cookies.</li>
+            <li>Administrative changes require CSRF protection.</li>
+            <li>Access is controlled by account role.</li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer id="wb-info">
+  <div class="container">
+    <p><a href="/en/">Government of the Separated Kingdom</a></p>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js?v=oss18"></script>
+<script src="/assets/js/admin-login.js?v=oss18"></script>
+</body>
+</html>

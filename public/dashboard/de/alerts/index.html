@@ -1,0 +1,148 @@
+<!doctype html><html class="no-js" lang="de" dir="ltr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Notfallmeldungen steuern - Regierung des Separated Kingdom</title><meta name="description" content="Notfallmeldungen verwalten.">
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/css/theme.min.css">
+  <noscript><link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css"></noscript>
+  <link rel="icon" href="/assets/img/flag.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css?v=oss18">
+</head><body vocab="http://schema.org/" typeof="WebPage"><nav>
+      <ul id="wb-tphp">
+        <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Zum Hauptinhalt springen</a></li>
+        <li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Zu „Über diese Website“ springen</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div id="wb-bnr" class="container"><div class="row">
+        <section id="wb-lng" class="col-xs-3 col-sm-12 pull-right text-right">
+          <h2 class="wb-inv">Sprachauswahl</h2>
+          <ul class="list-inline mrgn-bttm-0">
+            <li><a lang="en" hreflang="en" href="/dashboard/alerts/"><span class="hidden-xs" translate="no">English</span><abbr title="English" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase">de</abbr></a></li>
+          </ul>
+        </section>
+        <div class="brand col-xs-9 col-sm-6 col-md-5" property="publisher" typeof="RegierungOrganization">
+          <a href="/en/" property="url"><img class="sk-sig" src="/assets/img/government.svg" alt="Regierung des Separated Kingdom" property="logo"><span class="wb-inv">Regierung des Separated Kingdom</span></a>
+          <meta property="name" content="Regierung des Separated Kingdom">
+          <meta property="areaServed" typeof="Country" content="Separated Kingdom">
+          <link property="logo" href="/assets/img/flag.svg">
+        </div>
+        <section id="wb-srch" class="col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-12 col-sm-5 col-md-4 sk-search">
+          <h2>Suche</h2>
+          <form action="/en/search/" method="get" name="sk-search-box" role="search">
+            <div class="form-group wb-srch-qry">
+              <label for="wb-srch-q" class="wb-inv">Separated Kingdom durchsuchen</label>
+              <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Separated Kingdom durchsuchen">
+              <datalist id="wb-srch-q-ac"></datalist>
+            </div>
+            <div class="form-group submit">
+              <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Suche</span></button>
+            </div>
+          </form>
+        </section>
+      </div></div>
+      <hr>
+      <div class="container"><div class="row"><div class="col-md-8">
+        <nav class="gcweb-menu sk-simple-menu" typeof="SiteNavigationElement">
+          <h2 class="wb-inv">Menü</h2>
+          <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Hauptmenü </span>Menü <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
+          <ul class="sk-menu-list">
+            <li><a href="/en/services/">Dienste</a></li>
+<li><a href="/en/news/">Nachrichten</a></li>
+<li><a href="/en/incident-reports/">Ereignisberichte</a></li>
+<li><a href="/en/advisories/">Hinweise</a></li>
+<li><a href="/en/gazette/">Amtsblatt</a></li>
+<li><a href="/en/laws/">Gesetze</a></li>
+<li><a href="/en/transparency/">Transparenz</a></li>
+<li><a href="/en/records/">Aufzeichnungen</a></li>
+<li><a href="/en/states/">Staaten</a></li>
+<li><a href="/en/departments/">Behörden</a></li>
+          </ul>
+        </nav>
+      </div></div></div>
+    </header><main class="container">
+  <h1 id="wb-cont">Notfallmeldungen steuern</h1>
+  <p class="pagetag">Öffentliche Notfallmeldungen erstellen, bearbeiten, aktivieren, auflösen und ablaufen lassen.</p>
+  <p id="alert-save-result"></p>
+<section class="admin-panel">
+  <h2>Einstellungen des Notfallmeldesystems</h2>
+  <form id="eas-settings-form">
+    <div class="checkbox"><label><input type="checkbox" id="eas-enabled"> Notfallmeldesystem aktivieren</label></div>
+    <div class="checkbox"><label><input type="checkbox" id="eas-banner-enabled" checked> Website-weites Notfallbanner anzeigen</label></div>
+    <div class="checkbox"><label><input type="checkbox" id="eas-public-list-enabled" checked> Öffentliche Meldungsseite anzeigen</label></div>
+    <label for="eas-message">Inaktive Meldung Englisch</label>
+    <input id="eas-message" class="form-control">
+    <label for="eas-message-de">Inaktive Meldung Deutsch</label>
+    <input id="eas-message-de" class="form-control">
+    <button class="btn btn-primary mrgn-tp-md" type="submit">Einstellungen des Notfallmeldesystems speichern</button>
+  </form>
+</section>
+  <div class="admin-layout">
+    <section>
+      <h2>Meldungen</h2>
+      <div id="alerts-items" class="record-list"></div>
+    </section>
+    <aside class="admin-panel">
+      <h2>Meldung bearbeiten</h2>
+      <form id="alert-form">
+        <input type="hidden" id="alert-id">
+        <label for="hazardType">Gefahrentyp</label>
+        <select id="hazardType" class="form-control">
+          <option value="earthquake">Erdbeben</option>
+          <option value="tsunami">Tsunami</option>
+          <option value="tornado">Tornado</option>
+          <option value="meteor">Meteoriteneinschlag</option>
+          <option value="drought">Dürre</option>
+          <option value="gravitational anomaly">Gravitationsanomalie</option>
+          <option value="general">Allgemeiner Notfall</option>
+        </select>
+        <label for="severity">Schweregrad</label>
+        <select id="severity" class="form-control">
+          <option value="advisory">Hinweis</option>
+          <option value="watch">Warnbereitschaft</option>
+          <option value="emergency">Notfall</option>
+          <option value="critical">Kritisch</option>
+          <option value="resolved">Entwarnung</option>
+        </select>
+        <label for="status">Status</label>
+        <select id="status" class="form-control">
+          <option value="draft">Entwurf</option>
+          <option value="active">Aktiv</option>
+          <option value="resolved">Gelöst</option>
+          <option value="expired">Abgelaufen</option>
+        </select>
+        <label for="title">Englischer Titel</label><input id="title" class="form-control">
+        <label for="title_de">Deutscher Titel</label><input id="title_de" class="form-control">
+        <label for="affectedArea">Betroffenes Gebiet Englisch</label><input id="affectedArea" class="form-control">
+        <label for="affectedArea_de">Betroffenes Gebiet Deutsch</label><input id="affectedArea_de" class="form-control">
+        <label for="date">Datum</label><input id="date" type="date" class="form-control">
+        <label for="startTime">Startzeit</label><input id="startTime" type="datetime-local" class="form-control">
+        <label for="endTime">Endzeit</label><input id="endTime" type="datetime-local" class="form-control">
+        <label for="message">Englische Nachricht</label><textarea id="message" class="form-control" rows="4"></textarea>
+        <label for="message_de">Deutsche Nachricht</label><textarea id="message_de" class="form-control" rows="4"></textarea>
+        <label for="instructions">Englische Anweisungen</label><textarea id="instructions" class="form-control" rows="3"></textarea>
+        <label for="instructions_de">Deutsche Anweisungen</label><textarea id="instructions_de" class="form-control" rows="3"></textarea>
+        <label for="linkTitle">Verwandter Link Titel Englisch</label><input id="linkTitle" class="form-control">
+        <label for="linkTitle_de">Verwandter Link Titel Deutsch</label><input id="linkTitle_de" class="form-control">
+        <label for="linkUrl">Verwandter Link URL</label><input id="linkUrl" class="form-control">
+        <label for="attachmentTitle">Anhangstitel Englisch</label><input id="attachmentTitle" class="form-control">
+        <label for="attachmentTitle_de">Anhangstitel Deutsch</label><input id="attachmentTitle_de" class="form-control">
+        <label for="attachmentUrl">Anhang URL</label><input id="attachmentUrl" class="form-control">
+        <button class="btn btn-primary mrgn-tp-md" type="submit">Meldung speichern</button>
+        <button id="alert-new" class="btn btn-default mrgn-tp-md" type="button">Neue Meldung</button>
+      </form>
+    </aside>
+  </div>
+</main><section class="pagedetails container">
+      <h2 class="wb-inv">Page details</h2>
+      <dl id="wb-dtmd"><dt>Änderungsdatum:</dt><dd><time property="dateModified">2026-06-23</time></dd></dl>
+    </section>
+    <footer id="wb-info">
+      <div class="sk-footer-main">
+        <div class="container">
+          <h2>Regierung des Separated Kingdom</h2>
+          <div class="row">
+            <div class="col-md-4"><h3>Kontakt</h3><ul class="list-unstyled"><li><a href="/en/departments/">Behörden and agencies</a></li><li><a href="/en/services/">Dienste</a></li></ul></div>
+            <div class="col-md-4"><h3>Themen</h3><ul class="list-unstyled"><li><a href="/en/advisories/">Öffentliche Sicherheit</a></li><li><a href="/en/gazette/">Amtsblatt</a></li><li><a href="/en/transparency/">Transparenz</a></li></ul></div>
+            <div class="col-md-4"><h3>Regierung</h3><ul class="list-unstyled"><li><a href="/en/states/">Staaten and regions</a></li><li><a href="/en/records/">Institutionelle Aufzeichnungen</a></li><li><a href="/en/news/">Nachrichten</a></li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div class="sk-footer-sub"><div class="container"><ul class="list-inline"><li><a href="/de/services/">Kontakt</a></li><li><a href="/de/terms/">Nutzungsbedingungen</a></li><li><a href="/de/privacy/">Datenschutz</a></li></ul></div></div>
+    </footer>    <script src="/assets/js/site.js?v=oss18"></script><script src="/assets/js/admin-session.js?v=oss18"></script><script src="/assets/js/admin-nav.js?v=oss18"></script><script src="/assets/js/dashboard-alerts.js?v=oss18"></script></body></html>
